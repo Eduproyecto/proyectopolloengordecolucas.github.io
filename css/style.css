@@ -16,6 +16,10 @@
             justify-content: center;
             position: relative;
         }
+        .social-links img { 
+            width: 30px; 
+            margin-left: 10px; 
+        }
         .normal-text { font-weight: normal; }
         h1 {
             margin: 0;
@@ -41,8 +45,8 @@
             border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #ff9800;
-            color: white;
+            background: linear-gradient(to right, #cc9e08, #e7c21b); 
+            color: rgb(0, 0, 0);
             font-weight: bold;
         }
         tr:hover {
@@ -93,12 +97,26 @@
             width: 80px;
             height: 80px;
         }
+        .content-section { 
+            display: none; 
+            padding: 20px; 
+            background-color: transparent; 
+            margin: auto;
+            width: 48%; /* Reduce el ancho a 60% para hacerlo más angosto */
+            text-align: center; 
+        }
+        .content-section p { 
+            text-align: justify; /* Justifica el texto de los párrafos */
+        }
+        .visible { 
+            display: block; 
+        }
         .project-summary {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             text-align: justify;
-            margin: 20px auto;
+            margin: auto;
             max-width: 800px;
         }
         .project-summary img {

@@ -31,14 +31,14 @@
             text-align: left;
         }
         th {
-            background-color: orange;
-            color: white;
+            background: linear-gradient(to right, #ad8607, #ffd000); 
+            color: rgb(0, 0, 0);
         }
         .footer-message {
             background-color: #FFA500; /* Color naranja medio */
             padding: 10px;
             text-align: center;
-            color: white;
+            color: rgb(2, 2, 2);
             margin-top: 20px;
         }
         .fade-button {
@@ -70,47 +70,259 @@
     </header>
 <div class="content">
     <h2>Presupuesto de Proyecto</h2>
-    <table id="budgetTable">
+    <table id="materialesTable">
+    <tr>
+        <th colspan="2" class="table-header">RECURSOS MATERIALES - CREACIÓN DE INSTALACIONES</th>
+    </tr>
+    <tr>
+        <th>Materiales</th>
+        <th>Cantidades</th>
+        <th>Precio por unidad</th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td>Malla</td>
+        <td>3 m</td>
+        <td>7000</td>
+        <td>21000</td>
+    </tr>
+    <tr>
+        <td>Costales</td>
+        <td>3</td>
+        <td>500</td>
+        <td>1500</td>
+    </tr>
+    <tr>
+        <td>Alambre</td>
+        <td>1 lb</td>
+        <td>3500</td>
+        <td>3500</td>
+    </tr>
+    <tr>
+        <td>Puntillas</td>
+        <td>1 caja</td>
+        <td>5000</td>
+        <td>5000</td>
+    </tr>
+    <tr>
+        <td>Martillo</td>
+        <td>1</td>
+        <td>6000</td>
+        <td>6000</td>
+    </tr>
+    <tr>
+        <td>Madera</td>
+        <td>1</td>
+        <td>20000</td>
+        <td>20000</td>
+    </tr>
+    <tr>
+        <td>Alicate</td>
+        <td>1</td>
+        <td>15000</td>
+        <td>15000</td>
+    </tr>
+    <tr>
+        <td>Azadón</td>
+        <td>1</td>
+        <td>10000</td>
+        <td>10000</td>
+    </tr>
+    <tr>
+        <th colspan="3">TOTAL</th>
+        <th>82000</th>
+    </tr>
+</table>
+<div></div>
+<h2>Recursos Humanos</h2>
+<table id="humanosTable">
+    <tr>
+        <th colspan="3" class="table-header">RECURSOS HUMANOS</th>
+    </tr>
+    <tr>
+        <th>Jornales</th>
+        <th>Cantidades</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td>Armar corral</td>
+        <td>1</td>
+        <td>40000</td>
+    </tr>
+    <tr>
+        <td>Suplementos</td>
+        <td>2</td>
+        <td>80000</td>
+    </tr>
+    <tr>
+        <td>Alimentación</td>
+        <td>6</td>
+        <td>240000</td>
+    </tr>
+    <tr>
+        <td>Sacrificio</td>
+        <td>2</td>
+        <td>80000</td>
+    </tr>
+    <tr>
+        <th colspan="2">TOTAL</th>
+        <th>440000</th>
+    </tr>
+</table>
+<div></div>
+<div></div>
+<h2>Presupuesto de Alimento</h2>
+<table id="alimentoTable">
+    <tr>
+        <th colspan="4" class="table-header">ALIMENTO</th>
+    </tr>
+    <tr>
+        <th>Nombre</th>
+        <th>Kilos</th>
+        <th>Bulto</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td>Concentrado iniciación pollito</td>
+        <td>108</td>
+        <td>2</td>
+        <td>170000</td>
+    </tr>
+    <tr>
+        <td>Concentrado engorde</td>
+        <td>188</td>
+        <td>5</td>
+        <td>425000</td>
+    </tr>
+    <tr>
+        <td>Suplementos</td>
+        <td></td>
+        <td></td>
+        <td>30000</td>
+    </tr>
+    <tr>
+        <td>Bore</td>
+        <td>30</td>
+        <td></td>
+        <td>30000</td>
+    </tr>
+    <tr>
+        <th colspan="3">TOTAL</th>
+        <th>655000</th>
+    </tr>
+</table>
+<div></div>
+<div></div>
+<h2>Compra Animales e Insumos</h2>
+<table id="animalesTable">
+    <tr>
+        <th colspan="5" class="table-header">COMPRA DE ANIMALES Y INSUMOS</th>
+    </tr>
+    <tr>
+        <th>Artículos</th>
+        <th>Cantidad</th>
+        <th>Precio por unidad</th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td>Pollos</td>
+        <td>50</td>
+        <td>54</td> <!-- Precio por unidad corregido -->
+        <td>2700</td> <!-- Total corregido -->
+    </tr>
+    <tr>
+        <td>Bebedero</td>
+        <td>1</td>
+        <td>10000</td>
+        <td>10000</td>
+    </tr>
+    <tr>
+        <td>Comedero</td>
+        <td>1</td>
+        <td>10000</td>
+        <td>10000</td>
+    </tr>
+    <tr>
+        <th colspan="3">TOTAL</th>
+        <th>155000</th>
+    </tr>
+</table>
+<div></div>
+<div></div>
+<h2>Presupuesto Final</h2>
+<table id="presupuestoFinalTable">
+    <thead>
         <tr>
-            <th>Etapa</th>
-            <th>Detalle</th>
-            <th>Monto</th>
+            <th colspan="6" class="table-header">PRESUPUESTO FINAL</th>
         </tr>
         <tr>
-            <td>Inicial</td>
-            <td>Compra de Terreno</td>
-            <td>$10,000</td>
+            <th>Nombre</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Recursos materiales</td>
+            <td>82,000</td>
         </tr>
         <tr>
-            <td>Inicial</td>
-            <td>Equipamiento</td>
-            <td>$5,000</td>
+            <td>Insumos y animales</td>
+            <td>155,000</td>
         </tr>
         <tr>
-            <td>Intermedio</td>
-            <td>Materiales de Construcción</td>
-            <td>$8,000</td>
+            <td>Recursos humanos</td>
+            <td>440,000</td>
         </tr>
         <tr>
-            <td>Intermedio</td>
-            <td>Mano de Obra</td>
-            <td>$7,000</td>
+            <td>Alimento</td>
+            <td>655,000</td>
         </tr>
+    </tbody>
+    <tfoot>
         <tr>
-            <td>Final</td>
-            <td>Marketing</td>
-            <td>$3,000</td>
+            <th>TOTAL</th>
+            <th>1,332,000</th>
         </tr>
-        <tr>
-            <td>Final</td>
-            <td>Distribución</td>
-            <td>$2,000</td>
-        </tr>
-        <tr>
-            <td colspan="2"><strong>Total</strong></td>
-            <td id="total"><strong>$0</strong></td>
-        </tr>
-    </table>
+    </tfoot>
+</table>
+
+<div></div>
+<h2>Presupuesto Estimado</h2>
+<table id="presupuestoEstimadoTable">
+    <tr>
+        <th colspan="7" class="table-header" style="background-color: orange; color: white;">PRESUPUESTO</th>
+    </tr>
+    <tr>
+        <th>NOMBRE</th>
+        <th>CANTIDAD</th>
+        <th>PRECIO</th>
+    </tr>
+    <tr>
+        <td>Instalaciones</td>
+        <td></td>
+        <td>100000</td>
+    </tr>
+    <tr>
+        <td>Alimento</td>
+        <td>7 bultos</td>
+        <td>595000</td>
+    </tr>
+    <tr>
+        <td>Mano de obra</td>
+        <td>10 jornales</td>
+        <td>400000</td>
+    </tr>
+    <tr>
+        <td>Compra de animales y insumos</td>
+        <td></td>
+        <td>200000</td>
+    </tr>
+    <tr>
+        <th colspan="2">TOTAL</th>
+        <th>1295000</th>
+    </tr>
+</table>
+
     <div class="button-container">
         <button class="fade-button" onclick="goBack()">Volver a inicio</button>
     </div>
