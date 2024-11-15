@@ -1,0 +1,264 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <link rel="icon" href="img/escudo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suministro de Comida para Pollos de Engorde</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: #f0f0f0;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .table-header {
+            background-color: orange;
+            color: white;
+        }
+        /* Estilos de gráficos */
+        .chart-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .chart-container {
+            width: 5cm;
+            height: 6.5cm;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chart-title {
+            background: linear-gradient(to right, #ad8607, #ffd000); 
+            font-weight: bold;
+            font-size: 14px;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        /* Botón de regresar */
+        .back-button {
+            background-color: transparent;
+            border: 2px solid #FFB74D;
+            color: #ffb74d;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        .back-button:hover  {
+            background-color: orange;
+            color: white;
+        }
+        .back-button:active {
+            background-color:  rgb(250, 164, 5);
+        }
+        .full-width {
+            background: linear-gradient(to right, #ad8607, #ffd000); 
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/escudo2.png" alt="Logo Colegio" width="370" height="100">
+    </header>
+    
+    <div class="content">
+        <h2>Suministro de Comida para Pollos de Engorde</h2>
+        
+        <!-- Tabla de datos -->
+        <table id="foodTable">
+        <tr>
+            
+            <th>Fase de Crecimiento</th>
+            <th>Edad (días)</th>
+            <th>Tipo de Alimento</th>
+            <th>Cantidad Diaria (g)</th>
+            <th>Porcentaje de Proteína</th>
+            <th>Número de Raciones al Día</th>
+            <th>Momento del Día (Mañana / Tarde / Noche)</th>
+        </tr>
+        <tr class="full-width">
+            <td colspan="7">Primera Compra de Pollos</td>
+        </tr>
+        <tr>
+            <td>Iniciación</td>
+            <td>(0 - 3 Semanas)</td>
+            <td>Pollito Pre-iniciador</td>
+            <td>12-114g</td>
+            <td>20.0%</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Desarrollo</td>
+            <td>(4 Semana)</td>
+            <td>Pollo Engorde</td>
+            <td>121- 159g</td>
+            <td>19.50%</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Engorde</td>
+            <td>(5- 7 Semana)</td>
+            <td>Pollo Engorde con Pigmentación Natural</td>
+            <td>166 - 262g</td>
+            <td>19.50%</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    <tr class="full-width">
+        <td colspan="7">Segunda Compra de Pollos</td>
+    </tr>
+    <tr>
+        <td>Iniciación</td>
+        <td>(0 - 3 Semanas)</td>
+        <td>Pollito Pre-iniciador</td>
+        <td>12-114g</td>
+        <td>20.0%</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Desarrollo</td>
+        <td>(4 Semana)</td>
+        <td>Pollo Engorde</td>
+        <td>121- 159g</td>
+        <td>19.50%</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Engorde</td>
+        <td>(5- 6 Semana)</td>
+        <td>Pollo Engorde con Pigmentación Natural</td>
+        <td>166 - 233g</td>
+        <td>19.50%</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    </table>
+
+        
+        <!-- Gráficos -->
+        <div class="chart-row">
+            <div class="chart-container">
+                <div class="chart-title">Fase: Iniciación</div>
+                <canvas id="proteinChart1"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Fase: Crecimiento</div>
+                <canvas id="proteinChart2"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Fase: Desarrollo</div>
+                <canvas id="proteinChart3"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Fase: Engorde</div>
+                <canvas id="proteinChart4"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="chart-title">Fase: Finalización</div>
+                <canvas id="proteinChart5"></canvas>
+            </div>
+        </div>
+        
+        <!-- Botón de volver -->
+        <div style="text-align: center;">
+            <button class="back-button" onclick="window.location.href='index.html'">Volver a Inicio</button>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-message">
+            <p>&copy; Prom2024 Alumna Ángela Patricia López Calderón. Todos los derechos reservados.</p>
+        </div>
+        <div class="recaptcha-secure">
+            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="Asegurado con reCAPTCHA">
+            <span>Asegurado con reCAPTCHA</span>
+        </div>
+    </footer>
+    
+    <script>
+        // Gráficos de muestra
+        const foodData = [
+            {label: "Iniciación", data: [10, 25, 22, 3, 3]},
+            {label: "Crecimiento", data: [16, 45, 20, 3, 3]},
+            {label: "Desarrollo", data: [28, 70, 18, 3, 3]},
+            {label: "Engorde", data: [40, 110, 16, 3, 3]},
+            {label: "Finalización", data: [53, 140, 15, 3, 3]}
+        ];
+        const labels = ['Edad (días)', 'Cantidad Diaria (g)', 'Porcentaje de Proteína', 'Raciones al Día', 'Momentos del Día'];
+        const chartColors = ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF'];
+    
+        function createPieChart(chartId, data, phaseLabel) {
+            const ctx = document.getElementById(chartId).getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: chartColors
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: {
+                                    size: 10,
+                                    weight: 'bold'
+                                }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: phaseLabel,
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            },
+                            padding: {
+                                top: 20,
+                                bottom: 10
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    
+        foodData.forEach((item, index) => {
+            createPieChart(`proteinChart${index + 1}`, item.data, item.label);
+        });
+    </script>
+</body>
+</html>
