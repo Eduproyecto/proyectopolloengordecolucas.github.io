@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="img/escudo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cría y Comercialización de Carne de Pollo Semicriollo</title>
+   <link rel="stylesheet" href="css/style.css" />
+<style>
+.fade-button {
+            background-color: #f0f0f0;
+            border: 2px solid orange;
+            color: orange;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .fade-button:hover {
+            background-color: orange;
+            color: white;
+        }
+       footer {
+            background-color: #FFA500; /* Fondo naranja */
+            color: rgb(0, 0, 0); /* Texto en color negro */
+            text-align: center;
+            padding: 10px;
+        }
+        .footer-message {
+            text-align: center;
+            font-weight: normal; /* Fuente normal */
+        }
+        .full-width {
+            background: linear-gradient(to right, #ad8607, #ffd000); 
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="side-images left">
+            <img src="img/pollo1.png" alt="Imagen Grande Izquierda">
+            <img src="img/pollo2.png" alt="Imagen Mediana Izquierda">
+            <img src="img/pollo3.png" alt="Imagen Pequeña Izquierda">
+        </div>
+        <div class="side-images right">
+            <img src="img/pollo4.png" alt="Imagen Grande Derecha">
+            <img src="img/pollo5.png" alt="Imagen Mediana Derecha">
+            <img src="img/pollo6.png" alt="Imagen Pequeña Derecha">
+  </div>
+        <img src="img/escudo2.png" alt="Logo Colegio" width="370" height="100" align-items: izquierda;>
+
+    </header>
+<div class="content">
+        <h2>Control de Peso Semanal</h2>
+         <table>
+            <tr>
+                <th>Mes</th>
+                <th>Semana</th>
+                <th>Peso</th>
+            </tr>
+            <tr>
+                <tr class="full-width">
+                    <td colspan="7">Primera Compra de Pollos</td>
+                </tr>
+                <td rowspan="4">Agosto</td>
+                <td>Semana 1 (del 1 de agosto al 7 de agosto)</td>
+                <td>Los pollos  pesan un aproximado de 160g</td>
+            </tr>
+            <tr>
+                <td>Semana 2 (del 8 de agosto al 14 de agosto)</td>
+                <td>Los pollos  pesan un aproximado de 500g</td>
+            </tr>
+            <tr>
+                <td>Semana 3 (del 15 de agosto al 21 de agosto)</td>
+                <td>Los pollos  pesan un aproximado de 800g</td>
+            </tr>
+            <tr>
+                <td>Semana 4 (del 22 de agosto al 28 de agosto)</td>
+                <td>Los pollos  pesan un aproximado de 1300g</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Septiembre</td>
+                <td>Semana 1 (del 1 de septiembre al 7 de septiembre)</td>
+                <td>Los pollos  pesan un aproximado de 1700g</td>
+            </tr>
+            <tr>
+                <td>Semana 2 (del 8 de septiembre al 14 de septiembre)</td>
+                <td>Los pollos  pesan un aproximado de 2400g</td>
+            </tr>
+            <tr>
+                <td>Semana 3 (del 15 de septiembre al 21 de septiembre)</td>
+                <td>Los pollos  pesan un aproximado de 3000g</td>
+            </tr>
+            <tr>
+            <tr class="full-width">
+                <td colspan="7">Segunda Compra de Pollos</td>
+            </tr>
+                <td rowspan="4">Octubre</td>
+                <td>Semana 1 (del 1 de octubre al 7 de octubre)</td>
+                <td>Los pollos  pesan un aproximado de 170g</td>
+            </tr>
+            <tr>
+                <td>Semana 2 (del 8 de octubre al 14 de octubre)</td>
+                <td>Los pollos  pesan un aproximado de 690g</td>
+            </tr>
+            <tr>
+                <td>Semana 3 (del 15 de octubre al 21 de octubre)</td>
+                <td>Los pollos  pesan un aproximado de 1240g</td>
+            </tr>
+            <tr>
+                <td>Semana 4 (del 22 de octubre al 28 de octubre)</td>
+                <td>Los pollos  pesan un aproximado de 1600g</td>
+            </tr>
+        </tr>
+        <td rowspan="4">Noviembre</td>
+        <td>Semana 1 (del 1 de octubre al 7 de octubre)</td>
+        <td>Los pollos  pesan un aproximado de 2200g</td>
+    </tr>
+    <tr>
+        <td>Semana 2 (del 8 de octubre al 14 de octubre)</td>
+        <td>Los pollos  pesan un aproximado de 3100g</td>
+    </tr>
+        </table>
+
+<div class="carousel-container">
+        <button class="carousel-button left" onclick="moveCarousel(-1)">&#9664;</button>
+        <div class="carousel" id="carousel">
+            <img src="img/image1.png" alt="Imagen 1">
+            <img src="img/image2.png" alt="Imagen 2">
+            <img src="img/image3.png" alt="Imagen 3">
+            <img src="img/image4.png" alt="Imagen 4">
+            <img src="img/image5.png" alt="Imagen 5">
+            <img src="img/image6.png" alt="Imagen 6">
+            <img src="img/image7.png" alt="Imagen 7">
+            <img src="img/image8.png" alt="Imagen 8">
+            <img src="img/image9.png" alt="Imagen 9">
+            <img src="img/image10.png" alt="Imagen 10">
+        </div>
+        <button class="carousel-button right" onclick="moveCarousel(1)">&#9654;</button>
+    </div>
+    <script>
+        const carousel = document.getElementById('carousel');
+        let currentIndex = 0;
+
+        function moveCarousel(direction) {
+            const items = carousel.children.length;
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = items - 1;
+            } else if (currentIndex >= items) {
+                currentIndex = 0;
+            }
+            carousel.style.transform = `translateX(-${currentIndex * 160}px)`;
+        }
+    </script>
+ <!-- Botones añadidos -->
+    <div class="buttons-container">
+        <a href="index.html" button class="fade-button" onclick="goBack()">Volver a inicio</button></a>
+           </div>
+    <!-- Fin de botones añadidos --> 
+    <footer>
+        <div class="footer-message">
+            <p>&copy; Prom2024 Alumna Ángela Patricia López Calderón. Todos los derechos reservados.</p>
+        </div>
+        <div class="recaptcha-secure">
+            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="Asegurado con reCAPTCHA">
+            <span>Asegurado con reCAPTCHA</span>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

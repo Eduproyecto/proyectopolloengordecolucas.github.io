@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="img/escudo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cría y Comercialización de Carne de Pollo Semicriollo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        body {
+            background-color: #f0f0f0; /* Color de fondo */
+        }
+        .side-images {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .side-images img {
+            width: 32%;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: orange;
+            color: white;
+        }
+        .footer-message {
+            background-color: #FFA500; /* Color naranja medio */
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        .fade-button {
+            background-color: #f0f0f0;
+            border: 2px solid orange;
+            color: orange;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .fade-button:hover {
+            background-color: orange;
+            color: white;
+        }
+       
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/escudo2.png" alt="Logo Colegio" width="370" height="100" align-items="izquierda">
+    </header>
+    <div class="content">
+        <h2>Cronograma de Actividades</h2>
+        <img src="img/cronograma.png" alt="Cronograma de Actividades" width="60%">
+        <div class="button-container">
+            <button class="fade-button" onclick="goBack()">Volver a inicio</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <footer>
+        <div class="footer-message">
+            <p>&copy; Prom2024 Alumna Ángela Patricia López Calderón. Todos los derechos reservados.</p>
+        </div>
+        <div class="recaptcha-secure">
+            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="Asegurado con reCAPTCHA">
+            <span>Asegurado con reCAPTCHA</span>
+        </div>
+    </footer>
+
+</body>
+</html>
