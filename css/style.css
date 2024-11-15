@@ -53,7 +53,7 @@
             font-weight: bold;
         }
         .button {
-            background-color: #ff9800;
+            background: linear-gradient(to right, #cc9e08, #ffd000); 
             color: rgb(15, 15, 15);
             padding: 10px 20px;
             text-decoration: none;
@@ -133,7 +133,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background-color: #ff9800;
+            background: linear-gradient(to right, #ad8607, #ffd000); 
             color: white;
             border: none;
             padding: 10px 20px;
