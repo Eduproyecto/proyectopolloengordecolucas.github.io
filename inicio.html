@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="img/escudo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cría y Comercialización de Carne de Pollo Semicriollo</title>
+   <link rel="stylesheet" href="css/style.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'F3') {
+        window.open('documento/proyecto.docx', '_blank');
+    }
+});
+</script>
+</head>
+<body>
+    <header>
+        <div class="side-images left">
+            <img src="img/pollo1.png" alt="Imagen Grande Izquierda">
+            <img src="img/pollo2.png" alt="Imagen Mediana Izquierda">
+            <img src="img/pollo3.png" alt="Imagen Pequeña Izquierda">
+        </div>
+        <div class="side-images right">
+            <img src="img/pollo4.png" alt="Imagen Grande Derecha">
+            <img src="img/pollo5.png" alt="Imagen Mediana Derecha">
+            <img src="img/pollo6.png" alt="Imagen Pequeña Derecha">
+        </div>
+
+        <img src="img/escudo2.png" alt="Logo Colegio" width="370" height="100">
+        <h1>Cría y Comercialización de Carne de Pollo Semicriollo</h1>
+        <h2><p class="normal-text">Se debe inspirar amor para el trabajo y enseñar a trabajar.</p>Autora Angela Patricia López Calderón</h2>
+    </header>
+    <div class="project-summary">
+        
+        <p>El presente trabajo es el resultado del manejo técnico en la cría y comercialización de carne de pollo de la línea Ross Ap que fue desarrollado en la vereda Gad del municipio de Suaita Santander para este cumplimiento se implementaron prácticas de manejo tanto en alimentación convencional como suplementaria al igual que con el agua que se les maneja una suplementación de una bomba calórica para minimizar costos de producción sobre la sostenibilidad de los mismo.</p>
+  </div>
+<div class="project-summary">
+      Por otra parte, se realizó un registro en cuanto a ganancia de peso teniendo en cuenta la cantidad de alimentación suministrada diariamente ya que se tiene estipulado un proceso de control de ganancia de peso para tener en cuenta la rentabilidad y la sostenibilidad de la totalidad de la producción.
+ </div>
+<div class="project-summary">
+        De igual forma se lograra controlar de una manera muy eficiente el consumo y suministros utilizados durante la producción del producto hasta obtener la comercialización del mismo para realizar un desarrollo de resultados evidenciando si es rentable la producción de pollos semicriollo manejando dietas suplementarias ya que estas buscan optimizar un 30 % de alimento convencional aportando diferentes componentes nutricionales como energía fibra proteína entre otros que ayudan al desarrollo más viable de la producción y creando un mejoramiento en el plan de alimentación en cuanto al costo total de este suministro diario.
+ </div>
+<div class="project-summary">
+       Asimismo, la comercialización de este producto busca tener en cuenta los parámetros y costos obtenidos durante la cría de los pollos para determinar los costos de producción de cada animal, rendimiento en cuanto a ganancias de peso y consumo de alimento logrando un empalme de la taza actual de precios del mercado con los resultados obtenidos de la producción. 
+ </div>
+<div class="project-summary">
+Finalmente se realizará el análisis de mercadeo en cuanto a venta porcentaje de gastos, porcentajes de gastos durante la cría para finalmente trazas la taza de ganancias obtenidas de la totalidad de producción. A lo largo del proyecto, se controla el peso semanal de los pollos y se administra una alimentación balanceada tres veces al día. El objetivo principal es producir carne de pollo de alta calidad para satisfacer la demanda del mercado local.</p>
+    </div>
+    <div class="content">
+        <div class="carousel-container">
+            <button class="carousel-button left" onclick="moveCarousel(-1)">&#9664;</button>
+            <div class="carousel" id="carousel">
+                <img src="img/image1.png" alt="Imagen 1">
+                <img src="img/image2.png" alt="Imagen 2">
+                <img src="img/image3.png" alt="Imagen 3">
+                <img src="img/image4.png" alt="Imagen 4">
+                <img src="img/image5.png" alt="Imagen 5">
+                <img src="img/image6.png" alt="Imagen 6">
+                <img src="img/image7.png" alt="Imagen 7">
+                <img src="img/image8.png" alt="Imagen 8">
+                <img src="img/image9.png" alt="Imagen 9">
+                <img src="img/image10.png" alt="Imagen 10">
+            </div>
+            <button class="carousel-button right" onclick="moveCarousel(1)">&#9654;</button>
+        </div>
+        <script>
+            const carousel = document.getElementById('carousel');
+            let currentIndex = 0;
+
+            function moveCarousel(direction) {
+                const items = carousel.children.length;
+                currentIndex += direction;
+                if (currentIndex < 0) {
+                    currentIndex = items - 1;
+                } else if (currentIndex >= items) {
+                    currentIndex = 0;
+                }
+                carousel.style.transform = `translateX(-${currentIndex * 160}px)`;
+            }
+        </script>
+
+        <!-- Botones añadidos -->
+        <div class="buttons-container">
+            <a href="Suministro de Comida.html" class="button" style="background-color: orange;">Suministro de Comida</a>
+            <a href="Control de Peso.html" class="button" style="background-color: orange;">Control de Peso</a>
+            <a href="cronograma.html" class="button" style="background-color: orange;">Cronograma</a>
+            <a href="presupuesto.html" class="button" style="background-color: orange;">Presupuesto</a>
+        </div>
+        <!-- Fin de botones añadidos -->
+
+        <h2>Suministro de Comida Diario</h2>
+        <p>Los pollos se alimentan tres veces al día: mañana, tarde y noche.</p>
+        <a href="https://forms.gle/q1pmuvX2gtzVjqUbA" class="button">Ingresar al Formulario</a>
+    </div>
+    <script>
+        // Aquí puedes agregar cualquier funcionalidad adicional con JavaScript
+    </script>
+<footer>
+    <div class="footer-message">
+        <p>&copy; Prom2024 Alumna Ángela Patricia López Calderón. Todos los derechos reservados.</p>
+    </div>
+    <div class="recaptcha-secure">
+        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="Asegurado con reCAPTCHA">
+        <span>Asegurado con reCAPTCHA</span>
+    </div>
+</footer>
+</body>
+</html>

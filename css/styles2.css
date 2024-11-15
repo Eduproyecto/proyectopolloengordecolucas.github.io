@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background-color: #ff9800;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+.schedule-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #ff9800;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.active {
+    background-color: #ffecb3;
+}
+.motivation {
+    background-color: #ffccbc;
+}
+.administration {
+    background-color: #e6ee9c;
+}
+.stress-control {
+    background-color: #dcedc8;
+}
+.teamwork {
+    background-color: #b3e5fc;
+}
+.labor-commitment {
+    background-color: #b2dfdb;
+}
+.tax-administration {
+    background-color: #c5cae9;
+}
+.shareholder-rights {
+    background-color: #f8bbd0;
+}
+.worker-rights {
+    background-color: #d1c4e9;
+}
