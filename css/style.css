@@ -232,6 +232,15 @@ body {
     width: 30px;
     margin: 0 5px;
 }
+/* Nueva franja pequeña debajo del pie de página */
+.footer-small {
+    background-color: #a06103; /* Verde oscuro */
+    color: #FFFFFF; /* Letra blanca */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
 
 /* Estilos para dispositivos de escritorio */
 @media (min-width: 1024px) {
